@@ -1,0 +1,64 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intro
+  - corona_vaccine
+  - corona_spread
+  - corona_variants
+  - corona_food_spread
+  - corona_prevention
+  - corona_weather
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Sai Geetha."
+
+  utter_corona_intro:
+  - text: "Cornaviruses are a type of virus. There are many different kinds, and some cause disease. A coronavirus identified in 2019, SARS-CoV-2, has caused a pandemic of respiratory illness, called COVID-19.WHAT YOU NEED TO KNOW CO"
+
+  utter_corona_vaccine:
+  - text: "Yes there are now several vaccines that are in use"
+
+  utter_corona_spread:
+  - text: "The virus is transmitted through direct contact with respiratory droplets of an infected person (generated through coughing and sneezing), and touching surfaces contaminated with the virus"
+
+  utter_corona_variants:
+  - text: "Yes there are now several vaccines that are in use" 
+
+  utter_corona_food_spread:
+  - text : "There is currently no evidence that people can catch COVID-19 from food."
+  
+  utter_corona_prevention:
+  - text : "1 Wash your Hands Often. 2 Cough into your Elbow. 3 Don't touch your Face. 4 Stay more than 3 feet apart. 5 Feel sick? Stay home."
+
+  utter_corona_weather:
+  - text : "study points to more severe cases in cold and dry weather."
+
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

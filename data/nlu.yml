@@ -1,0 +1,221 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intversion: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: corona_intro
+  examples: |
+    - what is corona?
+    - what is covid?
+    - what is covid19?
+    - tell me about corona
+    - can you tell me about corona?
+    - can we define corona?
+    - i want to know about corona
+    - i want to know about covid
+    - i want to know about covid19
+    - tell me about covid
+    - tell me about covid19
+
+- intent: corona_vaccine
+  examples: |
+    - what are covid vaccines?
+    - is there any treatment for corona?
+    - is there any treatment for corona19?
+    - is vaccination safe?
+    - who are the manufacturers of vaccine?
+
+- intent: corona_spread
+  examples: |
+    - How does corona spread?
+    - How does virus  spread?
+    
+- intent: corona_variants
+  examples: |
+    - Different types of variants
+    - corona variants
+    - covid19 variants
+  
+- intent: food_spread
+  examples: |
+    - does corona spread from food? 
+    - how will corona spread from food?
+
+- intent: corona_prevention
+  examples: |
+    - What are the precautions to take? 
+    - which mask should i use?
+    - how to save ou rselves from corona?
+
+- intent: corona_weather
+  examples: |
+    - will warm weather stop the spread of corona? 
+    - will it stop with warm weather?
+
+
+
+responses:
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Sai Geetha."
+
+  utter_corona_intro:
+  - text: "Cornaviruses are a type of virus. 
+           There are many different kinds, and
+           some cause disease. A coronavirus
+           identified in 2019, SARS-CoV-2, has caused a pandemic of respiratory illness, called COVID-19.WHAT YOU NEED TO KNOW CO"
+
+  utter_corona_vaccine:
+  - text: "A COVID‑19 vaccine is a vaccine intended to provide acquired immunity against severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2),
+           the virus that causes coronavirus disease 2019 (COVID‑19). Prior to the COVID‑19 pandemic,
+           an established body of knowledge existed about the structure and function of coronaviruses causing diseases like severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS).
+           This knowledge accelerated the development of various vaccine technologies during early 2020.[1] On 10 January 2020, the SARS-CoV-2 genetic sequence data was shared through GISAID, and by 19 March, the global pharmaceutical industry announced a major commitment to address COVID-19.[2] The COVID‑19 vaccines are widely credited for their role in reducing the spread, severity, and death caused by COVID-19.[3]"
+
+  utter_corona_spread:
+  - text: "When an infected person coughs, sneezes, or talks, droplets or tiny particles called aerosols carry the virus into the air from their nose or mouth.
+           Anyone who is within 6 feet of that person can breathe it into their lungs. 
+           Airborne transmission. Research shows that the virus can live in the air for up to 3 hours."
+
+  utter_corona_variants:
+  - text: "Yes there are now several vaccines that are in use" 
+
+  utter_corona_food_spread:
+  - text : "There's no evidence of anyone contracting the virus that causes COVID-19 after touching food containers and food packaging.
+            Many restaurants are now offering no-contact takeout and delivery to lessen the risk of transmission.
+            Still, if you're concerned, it's reasonable to follow general food safety guidelines. Wash your hands for at least 20 seconds with soap and water after handling takeout containers, and then transfer food to a clean dish using clean utensils. Wash your hands again before eating. After disposing of containers, clean and disinfect any surfaces that had takeout containers on them."
+  
+  utter_corona_prevention:
+  - text : "1 Wash your Hands Often.
+            2 Cough into your Elbow. 
+            3 Don't touch your Face. 
+            4 Stay more than 3 feet apart. 
+            5 Feel sick? Stay home.
+            6 Avoid touching surfaces, especially in public settings or health facilities
+            7 In case people infected with COVID-19 have touched them. Clean surfaces regularly with standard disinfectants.
+            8 Frequently clean your hands with soap and water, or an alcohol-based hand rub."
+
+  utter_corona_weather:
+  - text : "We don’t have direct evidence that climate change is influencing the spread of COVID-19, but we do know that climate change alters how we relate to other species on Earth and that matters to our health and our risk for infections.
+            As the planet heats up, animals big and small, on land and in the sea, are headed to the poles to get out of the heat. That means animals are coming into contact with other animals they normally wouldn’t, and that creates an opportunity for pathogens to get into new hosts.
+            Many of the root causes of climate change also increase the risk of pandemics. Deforestation, which occurs mostly for agricultural purposes, is the largest cause of habitat loss worldwide. Loss of habitat forces animals to migrate and potentially contact other animals or people and share germs. Large livestock farms can also serve as a source for spillover of infections from animals to people. Less demand for animal meat and more sustainable animal husbandry could decrease emerging infectious disease risk and lower greenhouse gas emissions.
+            We have many reasons to take climate action to improve our health and reducing risks for infectious disease emergence is one of them."
+
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

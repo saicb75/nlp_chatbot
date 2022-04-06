@@ -1,0 +1,66 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: what is corona
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+  
+- story: corona vaccine
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+
+- story: corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona variants
+  steps:
+  - intent: corona_variants
+  - action: utter_corona_variants
+
+- story: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+
+- story:  corona be prevented
+  steps:
+  - intent: corona_prevention
+  - action: utter_corona_prevention
+  
+- story: corona weather
+  steps:
+  - intent: corona_weather
+  - action: utter_corona_weather
+   
